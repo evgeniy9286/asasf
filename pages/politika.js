@@ -6,13 +6,13 @@ export default function Politica(){
    return(
       <>
       <Layout>
-      <div class="cont">
+      <div className="cont">
          <motion.div
          initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ease: "easeOut",  duration: 0.6, delay: 0.6, type: "tween"}}
   viewport={{ once: true }}
-         class="m-t-2 politika">
+         className="m-t-2 politika">
          <h1>Политика в отношении обработки персональных данных</h1>
          <h2>1. Общие положения</h2>
          <ul>

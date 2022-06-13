@@ -38,18 +38,18 @@ const Footer = () => {
       </li>
     </ul>
     <ul>
-       <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=79676749784">Watsapp</a></li>
-       <li><a target="_blank" href=" https://t.me/+79676749784">Telegram</a></li>
-       <li><a target="_blank" href = "viber://chat?number=%2B79676749784">Viber</a></li>
+       <li><a href="https://api.whatsapp.com/send/?phone=79676749784">Watsapp</a></li>
+       <li><a href=" https://t.me/+79676749784">Telegram</a></li>
+       <li><a href = "viber://chat?number=%2B79676749784">Viber</a></li>
     </ul>
     <ul>
        <li>
-         <a target="_blank" href="tel:+79676749784">+7(967)-674-97-84</a>
+         <a href="tel:+79676749784">+7(967)-674-97-84</a>
        </li>
        <li>
-         <a target="_blank" href="mailto:evgeniymakhnin@gmail.com">evgeniymakhnin@gmail.com</a>
+         <a href="mailto:evgeniymakhnin@gmail.com">evgeniymakhnin@gmail.com</a>
        </li>
-        <li><Link target="_blank" href="./politika"><a>Политика конфиденциальности</a></Link></li>
+        <li><Link href="./politika"><a>Политика конфиденциальности</a></Link></li>
     </ul>
     </div>
     </div>
