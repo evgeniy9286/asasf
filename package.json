@@ -1,0 +1,40 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^7.0.29",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "framer-motion": "^6.3.10",
+    "framer-motion-3d": "^6.3.8",
+    "gsap": "^3.10.4",
+    "hamburger-react": "^2.5.0",
+    "next": "12.1.6",
+    "nodemailer": "^6.7.5",
+    "prop-types": "^15.8.1",
+    "react": "18.1.0",
+    "react-animated-css": "^1.2.1",
+    "react-burger-menu": "^3.0.8",
+    "react-dom": "18.1.0",
+    "react-modal": "^3.15.1",
+    "react-parallax": "^3.5.0",
+    "react-scroll-parallax": "^3.2.0",
+    "styled-components": "^5.3.5",
+    "three": "^0.141.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.2",
+    "tailwindcss": "^3.0.24"
+  }
+}
