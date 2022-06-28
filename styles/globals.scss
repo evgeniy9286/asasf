@@ -1,9 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
 
-body, html {padding: 0;	margin: 0;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;font-family: 'Abril Fatface', cursive;
-font-family: 'Merriweather', serif;font-family: 'Open Sans', sans-serif;background-color: #ffffff;}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {padding: 0;	margin: 0;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;background-color: #ffffff;}
 *, p, h1, h2, h3, h4, span, a, ul, li {padding: 0;margin: 0;}
 button {background: none; border: 0;}
 button:hover {cursor: pointer;}
@@ -302,10 +315,78 @@ p, h1, h2, h3, h4, h5, h6, span, a, span{line-height: 1.5;color: #000000;}
   align-items: flex-start;
 }
 
+.big-text p{
+  font-size: 160px;
+  color: black;
+  -webkit-text-stroke: 1px #000000;
+  -webkit-text-fill-color: #ffffff;
+   box-sizing: border-box;
+    text-shadow: 0px 12px 12px rgba(0, 0, 0, 0.25);
+   @media(max-width: 1200px){
+    font-size: 80px;
+  }
+  @media(max-width: 768px){
+    font-size: 60px;
+  }
+}
+
+.primer{
+  width: 100%;
+  @media(max-width:1200px){
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+.primer h2{
+  font-size:40px;
+  font-weight: bold;
+   box-sizing: border-box;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.primer-link{
+  font-size:25px;
+  color:#000000;
+  opacity:0.6;
+  transition: 0.3s ease-out;
+  width: 22%;
+  margin-right: 30px;
+  margin-top: 10px;
+  @media(max-width: 1200px){
+    width:30%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.primer-link:hover{
+  opacity:1;
+}
+
+.big-text {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.big-text p:first-child{
+  text-align:left;
+}
+
+.big-text p{
+  text-align:center;
+}
+
+.big-text p:last-child{
+  text-align:right;
+}
+
+
+
+
 .linf-form{
   font-weight: bold;
   position: relative;
-	color: #00a650; 
+	color: #0000ff; 
 	cursor: pointer;
 	line-height: 1; 
 	text-decoration: none;
@@ -318,14 +399,14 @@ p, h1, h2, h3, h4, h5, h6, span, a, span{line-height: 1.5;color: #000000;}
 	left: 0; 
 	width: 0;
 	height: 2px;
-	background-color: #00a650; 
+	background-color: #0000ff; 
 	content: "";
-	transition: width 0.3s ease-out;
+	transition: 0.3s ease-out;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.link-form:hover .linf-form:after,
-.linf-form:focus:after {
+.linf-form:hover:after
+ {
 	width: 100%;
 }
 
@@ -374,12 +455,18 @@ p, h1, h2, h3, h4, h5, h6, span, a, span{line-height: 1.5;color: #000000;}
   width: 80%;
    padding-top: 5px;
   padding-bottom: 15px;
+  @media(max-width: 1200px){
+    width: 70%;
+  }
 }
 
 .price-section-subtitle{
   width: 20%;
    padding-top: 5px;
   padding-bottom: 15px;
+  @media(max-width: 1200px){
+    width: 30%;
+  }
 }
 
 .price-section-title p{
@@ -413,7 +500,7 @@ p, h1, h2, h3, h4, h5, h6, span, a, span{line-height: 1.5;color: #000000;}
   width: 50%;
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 60px 80px 60px 80px;
+  padding: 50px 80px 50px 80px;
   border-radius: 5px;
   background-color: #FAFAFA;
   @media(max-width: 1200px){
@@ -426,32 +513,31 @@ p, h1, h2, h3, h4, h5, h6, span, a, span{line-height: 1.5;color: #000000;}
   }
 }
 
-form p{
-  padding-left: 15px;
-  font-size: 20px;
-  margin-top: 20px;
-}
-form input{
+.form input{
   padding-left: 15px;
   height: 30px;
-  margin-top: 7px;
+  margin-top: 30px;
   border-radius:7px;
+   border: 0;
 }
 
 .textarea{
   height: 100px;
   padding-left: 15px;
-  margin-top:7px;
+  padding-top: 5px;
+  padding-right: 15px;
+  margin-top:30px;
   margin-bottom: 30px;
   border-radius:7px;
+  border: 0;
 }
 
 .send-form{
-   width: 120px;
-   height: 50px;
+   width: 100px;
+   height: 40px;
    border-radius: 10px;
    margin: 0 auto;
-  background-color: #00a650;
+  background-color: #0000ff;
   color: white;
    -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -506,5 +592,6 @@ form input{
 .politika li{
   margin-top: 10px;
 }
+
 
 
