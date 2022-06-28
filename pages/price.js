@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from "framer-motion"
-import Menu from "../components/header/Menu"
-import Footer from '../components/footer/Footer'
-
+import Menu from "./header/Menu"
+import Footer from './footer/Footer'
 
 export default function Price() {
   return (
