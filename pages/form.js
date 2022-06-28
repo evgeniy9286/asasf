@@ -14,7 +14,7 @@ function Form() {
 	
 		try {
 			
-			await axios.post('http://localhost:3000/api/send-request', {
+			await axios.post('https://evgeniy-makhnin.vercel.app/api/send-request', {
 				name, email, phone, message
 			});
 			
