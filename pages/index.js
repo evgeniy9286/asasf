@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Layout from '../components/layout'
 import Image from 'next/image'
 import Link from 'next/link'
 import Next from '../public/image-2.jpg'
 import NextTwo from '../public/react.jpg'
 import { motion } from "framer-motion"
-
+import Menu from "../components/header/Menu"
+import Footer from '../components/footer/Footer'
 
 export default function Home() {
 
@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="description" content="Разработка высокопроизводительных WEB-приложений" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
+      <Menu/>
         <div className="phone-title content_bg-1">
           <motion.h1
   animate={{ y: [20, 0], opacity: [0, 1] }}
@@ -90,6 +90,109 @@ export default function Home() {
          </div>
         </div>
 
+         </div>
+
+         <div className="m-t-1">
+          <div className="big-text">
+            <motion.p
+            initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ease: "easeOut",  duration: 0.6, delay: 0.6, type: "tween"}}
+  viewport={{ once: true }}
+            >Скорость</motion.p>
+            <motion.p
+            initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ease: "easeOut",  duration: 1, delay: 0.8, type: "tween"}}
+  viewport={{ once: true }}
+            >Качество</motion.p>
+            <motion.p
+            initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ease: "easeOut",  duration: 1, delay: 1, type: "tween"}}
+  viewport={{ once: true }}
+            >Безопасность</motion.p>
+          </div>
+         </div>
+
+        <div className="cont">
+
+        <div className="m-t-1">
+          <motion.div
+           initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ease: "easeOut",  duration: 0.6, delay: 0.6, type: "tween"}}
+  viewport={{ once: true }}
+          className="primer">
+            <h2>В своих проектах Next.js используют:</h2>
+            <div className="m-t-3 wrap">
+
+              <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/">Tik Tok</a></p>
+             </div>
+
+              <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://m.twitch.tv/">Twitch</a></p>
+             </div>
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.netflix.com/">Netflix</a></p>
+             </div>
+
+              <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://copilot.github.com/">GitHub</a></p>
+             </div>
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.nike.com/">Nike</a></p>
+             </div>
+
+              <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.hbomax.com/">HBO Max</a></p>
+             </div>
+
+              <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://compete.playstation.com/">Playstation</a></p>
+             </div>
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.nintendo.com/">Nintendo</a></p>
+             </div>
+
+             
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.trip.com/">Trip</a></p>
+             </div>
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.today.com/">Today</a></p>
+             </div>
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.lego.com/">Lego</a></p>
+             </div>
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://finder.porsche.com/">Porsche</a></p>
+             </div>
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.ferrari.com/">Ferrari</a></p>
+             </div>
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://jobs.redbull.com/">Red Bull</a></p>
+             </div>
+
+             <div className="primer-link">
+             <p><a target="_blank" rel="noreferrer" href="https://www.marvel.com/">Marvel</a></p>
+             </div>
+
+             </div>
+          </motion.div>
+        </div>
+
         <motion.div
            initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -101,9 +204,9 @@ export default function Home() {
             <p>Заинтересовало мое предложение? Свяжитесь со мной по указанным ниже контактам, либо <Link href="/contact"><a className="linf-form">заполните форму</a></Link> обратной связи и я обязательно свяжусь с Вами для уточнения деталей.</p>
           </div>
         </motion.div>
-       
-         </div>
-        </Layout>
+       </div>
+       <Footer/>
     </>
   )
 }
+
